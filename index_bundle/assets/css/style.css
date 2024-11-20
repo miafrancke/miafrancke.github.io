@@ -1,16 +1,114 @@
-*{
-	margin: 0;
-	padding: 0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-	font-family: "CompagnonLight";
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
-.container{
 
+.header {
+    position: absolute;  
+    top: 20px;  
+    right: 20px;  
+    font-size: 4rem;  
+    color: darkslategray;
+    font-weight: bold;
+    padding: 5px;  
+    position: absolute;  
+    transition: all 0.3s ease; 
 }
 
-.item{
-	
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px; 
+    margin-top: 100px; 
+}
+
+
+.row {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.image-row {
+    display: flex;
+    gap: 10px; 
+}
+
+
+.item img {
+    width: 200px; 
+    height: auto; 
+    transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    filter: grayscale(100%); 
+}
+
+
+.item img:hover {
+    transform: scale(1.2); 
+    z-index: 10;
+    filter: grayscale(0%); 
+    box-shadow: 0px 0px 30px 10px pink; 
+}
+
+
+.text {
+    font-size: 2rem; 
+    color: darkslategray;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px; 
+    position: relative;  
+    transition: all 0.3s ease; 
+}
+
+
+.header:hover::after {
+    content: ''; 
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid pink; 
+    background-color: rgba(255, 105, 180, 0.3); 
+    z-index: -1; 
+}
+
+
+.text:hover::after {
+    content: ''; 
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 3px solid pink; 
+    background-color: rgba(255, 105, 180, 0.3); 
+    z-index: -1; 
+}
+
+
+.text:hover, .header:hover {
+    color: white; 
 }
