@@ -1,0 +1,162 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    animation: vibrate 0.3s ease-in-out infinite; 
+}
+
+
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px); 
+    }
+    50% {
+        transform: translateX(3px);  
+    }
+    75% {
+        transform: translateX(-3px); 
+    }
+    100% {
+        transform: translateX(0);    
+    }
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+    font-weight: bold;
+    color: yellowgreen;
+    filter: drop-shadow(0 0 110px limegreen) contrast(1.2) brightness(1);
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "degular-display", sans-serif;
+    font-weight: 400;
+    background-image: url('/assets/img/Folie_Hintergrund.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #f2f7e6;
+    padding-top: 150px; 
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 300vh; 
+    padding-bottom: 300px; 
+    padding-top: 150px; 
+}
+
+
+.sticker {
+    position: absolute;
+    top: calc(90vh * var(--top)); 
+    left: calc(90vw * var(--left)); 
+    transform: scale(var(--scale)); 
+    z-index: var(--z-index);
+    opacity: 0; 
+    animation: fadeInAndGrow 1.5s ease-out forwards; 
+}
+
+
+@keyframes fadeInAndGrow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(var(--scale)); 
+    }
+}
+
+
+.sticker summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.sticker summary::-webkit-details-marker {
+    display: none; 
+}
+
+
+.sticker img {
+    max-width: 300px; 
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px transparent); 
+    transition: transform 0.8s ease, filter 0.6s ease;
+}
+
+.sticker img:hover {
+    transform: scale(1.1) rotate(3deg); 
+    filter: drop-shadow(0 0 40px limegreen); 
+}
+
+
+.sticker p {
+    display: none;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: black;
+    text-align: left;
+    margin: 10px 0;
+    text-shadow: 0 0 10px limegreen, 0 0 20px limegreen;
+}
+
+
+
+.sticker[open] p {
+    display: block;
+}
+
+.sticker[open] {
+    z-index: 9999; 
+}
+
+
+.sticker[open] p {
+    display: block;  
+}
+
+
+
+.sticker:nth-child(1) { --top: 0.03; --left: 0.8; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(2) { --top: 0.1; --left: 0.3; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(3) { --top: 0.35; --left: 0.2; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(4) { --top: 0.5; --left: 0.7; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(5) { --top: 0.65; --left: 0.5; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(6) { --top: 0.9; --left: 0.8; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(7) { --top: 0.95; --left: 0.3; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(8) { --top: 1.1; --left: 0.25; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(9) { --top: 1.25; --left: 0.4; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(10) { --top: 1.4; --left: 0.6; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(11) { --top: 1.55; --left: 0.8; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(12) { --top: 1.7; --left: 0.15; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(13) { --top: 1.85; --left: 0.3; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(14) { --top: 2.0; --left: 0.45; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(15) { --top: 2.15; --left: 0.7; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(16) { --top: 2.3; --left: 0.8; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(17) { --top: 2.45; --left: 0.6; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(18) { --top: 2.6; --left: 0.2; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(19) { --top: 2.75; --left: 0.4; --scale: 2.0; --z-index: 2; }
+.sticker:nth-child(20) { --top: 2.9; --left: 0.8; --scale: 2.0; --z-index: 2; }
+
+
+
