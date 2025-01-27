@@ -111,7 +111,6 @@ details summary::marker {
 
 
 .email-button:hover {
-    transform: scale(1.2);
     background-color: blue; 
     color: white; 
     border-color: blue; 
@@ -147,7 +146,7 @@ details summary::marker {
     z-index: 10001;
     padding: 1px;
     font-family: "forma-djr-display", sans-serif;
-     font-size: 2rem; 
+     font-size: 1.5rem; 
     font-weight: bold;
     font-style: normal;
         overflow-x: hidden;
@@ -164,7 +163,6 @@ details summary::marker {
 }
 
 .question-button:hover {
-    transform: scale(1.2);
     background-color: blue; 
     color: white; 
     border-color: blue; 
@@ -174,6 +172,7 @@ details summary::marker {
 .question-button, .email-button {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
+
 
 
 html, body {
