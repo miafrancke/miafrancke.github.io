@@ -139,7 +139,7 @@ details summary::marker {
 .question-button .question-text {
     position: absolute;
     top: 290px;  
-    left: 570px; 
+    left: 540px; 
     transform: translate(-50%, -50%); 
     color: blue;  
     text-align: center; 
@@ -153,7 +153,7 @@ details summary::marker {
     font-weight: 500;
     font-style: italic;
     text-shadow: 3px 3px 5px white, -3px -3px 5px white, 3px -3px 5px white, -3px 3px 5px white;
-     line-height: 0.8;
+     line-height: 1;
       letter-spacing: 1.3px;
 }
 
@@ -197,6 +197,7 @@ html, body {
     padding-bottom: 300px; 
     padding-top: 150px; 
 }
+
 
 
 .sticker {
@@ -269,7 +270,7 @@ html, body {
     font-size: 1rem; 
     font-style: italic;
     color: blue; 
-    text-align: left;
+    text-align: center;
     margin: 5px 0;
     padding: 0px; 
      text-shadow: 3px 3px 5px white, -3px -3px 5px white, 3px -3px 5px white, -3px 3px 5px white;
@@ -321,3 +322,8 @@ html, body {
 .sticker:nth-child(31) { --top: 5.3; --left: 0.5; --scale: 1.5; --z-index: 2; }
 .sticker:nth-child(32) { --top: 5.6; --left: 0.1; --scale: 1.5; --z-index: 2; }
 .sticker:nth-child(33) { --top: 5.6; --left: 0.8; --scale: 1.5; --z-index: 2; }
+.sticker:nth-child(34) { --top: 5.8; --left: 0.3; --scale: 1.5; --z-index: 2; }
+.sticker:nth-child(35) { --top: 6.0; --left: 0.5; --scale: 1.5; --z-index: 2; }
+.sticker:nth-child(36) { --top: 6.3; --left: 0.1; --scale: 1.5; --z-index: 2; }
+.sticker:nth-child(37) { --top: 6.3; --left: 0.5; --scale: 1.5; --z-index: 2; }
+
