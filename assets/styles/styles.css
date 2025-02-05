@@ -1,15 +1,13 @@
-header {
-    width: 100%;
-    min-height: 300px;
-    max-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    position: relative;
-    top: 0;
-    z-index: 1000;
-    transition: all 0.3s ease;
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.7));
+    }
+    50% {
+        filter: drop-shadow(0 0 15px rgba(0, 0, 255, 1));
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 255, 0.7));
+    }
 }
 
 header img {
@@ -20,8 +18,12 @@ header img {
     position: relative;
     top: 20px;
     margin-left: 50px;
-     
+    z-index: 1000;
+    
+    
+    animation: glow 2s infinite alternate ease-in-out;
 }
+
 
 
 details summary {
