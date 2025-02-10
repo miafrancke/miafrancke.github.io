@@ -162,6 +162,53 @@ header img {
 }
 
 
+.bw-toggle-label {
+    position: fixed;
+    top: 90px;
+    right: 53px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10000;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.bw-toggle-label:hover {
+    background-color: blue;
+    border-color: blue;
+}
+
+.bw-toggle-label::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.bw-toggle-label:hover::after {
+    background-color: white;
+}
+
+.bw-toggle {
+    display: none;
+}
+
+body:has(.bw-toggle:checked) {
+    filter: grayscale(500%) contrast(900%) brightness(100%) ;
+}
+
+
+
 
 html, body {
     margin: 0;
@@ -174,6 +221,7 @@ html, body {
     background-color: #e1fae0;
     background-image: linear-gradient(#839df3 2.2px, transparent 2.2px), linear-gradient(to right, #839df3 2.2px, #e1fae0 2.2px);
     background-size: 44px 44px;
+
   
 }
 
