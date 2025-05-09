@@ -180,6 +180,7 @@ header img {
     cursor: pointer;
     z-index: 10000;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    
 }
 
 
@@ -205,6 +206,26 @@ header img {
 
 .bw-toggle {
     display: none;
+}
+
+@keyframes pulse-dot {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.8);
+    }
+}
+
+.bw-toggle-label::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.3s ease;
+    animation: pulse-dot 2s infinite ease-in-out;
 }
 
 
