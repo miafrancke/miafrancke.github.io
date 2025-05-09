@@ -231,6 +231,7 @@ header img {
 
 
 body {
+    transition: filter 1.4s ease-in-out;
     filter: grayscale(500%) contrast(700%) brightness(73%) ;
    
 }
